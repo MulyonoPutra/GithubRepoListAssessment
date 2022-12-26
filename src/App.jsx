@@ -1,11 +1,15 @@
-import './App.css'
+import './App.css';
+import React from 'react';
+import PageRoute from './features/routes/index.jsx';
+import { Provider } from 'react-redux';
+import store from './features/redux/store.js';
 
 function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+	return (
+		<Provider store={store}>
+			<PageRoute />
+		</Provider>
+	);
 }
 
-export default App
+export default App;
