@@ -1,0 +1,26 @@
+.card {
+	height: 200px !important;
+	@apply max-h-[32rem] p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-600 dark:border-gray-700 relative;
+}
+.card img {
+	@apply dark:bg-gray-600 cursor-pointer absolute right-1;
+}
+.card .title {
+	@apply mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white dark:bg-gray-600;
+}
+.card .desc {
+	@apply mb-3 font-normal text-gray-500 dark:text-gray-400 dark:bg-gray-600;
+}
+.card .updated {
+	@apply mb-3 font-normal text-gray-500 dark:text-gray-400 dark:bg-gray-600 text-sm;
+}
+
+.hide {
+	@apply hidden;
+}
+
+.clipboard:hover + .hide {
+	@apply block bg-transparent text-gray-300 text-sm absolute right-1 top-0 mb-4;
+}
+
+/*# sourceMappingURL=card-item.css.map */
